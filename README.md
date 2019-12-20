@@ -1,6 +1,6 @@
 # xmastree
 
-Make your own christmas ornament for the department's christmas tree.
+Make your own christmas ornament for the Frontend Department's christmas tree.
 
 Rules
 1) This is the CSS-edition. No JS is allowed.
