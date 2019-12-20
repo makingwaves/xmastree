@@ -3,7 +3,7 @@
 Make your own christmas ornament for the Frontend Department's interactive christmas tree.
 
 Rules
-1) This is the CSS-edition. No JS is allowed.
+1) This is the pure CSS-edition. No JS is allowed. No CSS preprocessor.
 2) Please look at the example code.
 3) You will need to create your own unique css namescope and keep your work strictly within this.
 4) You can edit the css + html. inline SVG is possible.
