@@ -1,6 +1,6 @@
 # xmastree
 
-Make your own christmas ornament for the Frontend Department's christmas tree.
+Make your own christmas ornament for the Frontend Department's interactive christmas tree.
 
 Rules
 1) This is the CSS-edition. No JS is allowed.
@@ -12,7 +12,7 @@ Rules
 7) Max size for an ornamaent is 200px x 200px.
 8) Push your work to this repo. Deadline: before next department meeting.
 9) No need to support old browsers.
-10) Be createtive! 
+ 
 
-Good luck!
+Merry Christmas and Good Luck!
 
