@@ -1,0 +1,49 @@
+.ornament{
+	display:block;
+	width:200px;
+	height:200px;
+	position:absolute;
+	background-color:red;
+}
+
+/* Add your code here. Namespace everything */
+
+.hs{
+	width: 200px;
+	height:200px;
+	background: hsla(222, 74%, 47%, 0.38);;
+	clip-path: circle(100px at 100px 100px);
+	
+}
+.hs .fish{
+	fill:white;
+	animation: hsanimation 10s ease infinite;
+  animation-duration: 7s;
+}
+.hs .glass {
+	width:200px;
+	height:200px;
+	display:block;
+	background: radial-gradient(ellipse at 80% 20%, rgba(255, 255, 255, 0.45) 0%,rgba(255, 255, 255, 0) 100%);
+	position:absolute;
+	top:0;
+}
+.hs.active .glass{
+	background: radial-gradient(ellipse at 80% 20%, rgba(255, 255, 255, 0.45) 0%,rgba(255, 255, 255, 0) 100%), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/679111/snow03.gif");
+}
+
+@keyframes hsanimation {
+  0%   {transform: translateX(-160px);fill:hsl(222, 50%, 10%);}
+  25%  {transform: translateX(10px); fill:hsl(222, 50%, 50%);}
+  50%  {transform: translateX(70px); fill:hsl(222, 50%, 60%);}
+  100% {transform: translateX(250px); fill:hsl(222, 50%, 40%);}
+}
+
+
+#tree{
+	display:block;
+	height: 1800px;
+	background-repeat: no-repeat;
+	background-size:1600px;
+	background-image: url('assets/tree.jpeg');
+}
