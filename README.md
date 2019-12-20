@@ -9,7 +9,7 @@ Rules
 4) You can edit the css + html. inline SVG is possible.
 5) You can use external files. 
 6) Max size for an ornamaent is 200px x 200px.
-6) Push your work to this repo.
+6) Push your work to this repo. Deadline: before next department meeting.
 7) No need to support old browsers.
 8) Be createtive! 
 
