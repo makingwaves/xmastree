@@ -75,7 +75,8 @@
 
 #tree{
 	display:block;
-	height: 1800px;
+	width: 1823px;
+	height: 2625px;
 	background-repeat: no-repeat;
 	background-image: url('assets/tree.jpg');
 }
