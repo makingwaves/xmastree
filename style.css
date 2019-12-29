@@ -7,43 +7,75 @@
 }
 
 /* Add your code here. Namespace everything */
-
 .hs{
 	width: 200px;
 	height:200px;
-	background: hsla(222, 74%, 47%, 0.38);;
-	clip-path: circle(100px at 100px 100px);
-	
+	background: hsla(222, 100%, 30%, 0.59);
+	filter: url(#turb);
+	clip-path: circle(100px at 110px 110px); 
 }
 .hs .fish{
 	fill:white;
-	animation: hsanimation 10s ease infinite;
-  animation-duration: 7s;
+	animation: hsswim 7s ease infinite;
+}
+.hs text{
+	fill:white;
+	animation: hsswim 7s ease infinite;
+	animation-delay: 3s;
+	transform: translateX(-160px);
 }
 .hs .glass {
 	width:200px;
 	height:200px;
 	display:block;
-	background: radial-gradient(ellipse at 80% 20%, rgba(255, 255, 255, 0.45) 0%,rgba(255, 255, 255, 0) 100%);
+	background: radial-gradient(ellipse at 80% 20%, rgba(255, 255, 255, 0.85) 0%,rgba(0, 0, 0, 0) 36%, rgba(0, 0, 0, 0.7) 87%), url("assets/snow03.gif");
 	position:absolute;
 	top:0;
 }
-.hs.active .glass{
-	background: radial-gradient(ellipse at 80% 20%, rgba(255, 255, 255, 0.45) 0%,rgba(255, 255, 255, 0) 100%), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/679111/snow03.gif");
+.hs.active{
+	animation: hsshake .6s ease 3;
+}
+.hs.active .moresnow{
+	width:200px;
+	height:200px;
+	display:block;
+	background: url("assets/snow03.gif");
+	transform: rotate(180deg);
+	position:absolute;
+	top:0;
 }
 
-@keyframes hsanimation {
+@keyframes hsswim {
   0%   {transform: translateX(-160px);fill:hsl(222, 50%, 10%);}
   25%  {transform: translateX(10px); fill:hsl(222, 50%, 50%);}
   50%  {transform: translateX(70px); fill:hsl(222, 50%, 60%);}
   100% {transform: translateX(250px); fill:hsl(222, 50%, 40%);}
 }
+@keyframes hsshake {
+	from,
+	to {
+		transform: translate3d(0, 0, 0);
+	}
 
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translate3d(10px, 0, 0);
+	}
+}
 
 #tree{
 	display:block;
 	height: 1800px;
 	background-repeat: no-repeat;
-	background-size:1600px;
-	background-image: url('assets/tree.jpeg');
+	background-image: url('assets/tree.jpg');
 }
