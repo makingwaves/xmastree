@@ -11,8 +11,10 @@
 	width: 200px;
 	height:200px;
 	background: hsla(222, 100%, 30%, 0.59);
+	clip-path: circle(100px at 100px 100px); 
+}
+.hs svg{
 	filter: url(#turb);
-	clip-path: circle(100px at 110px 110px); 
 }
 .hs .fish{
 	fill:white;
