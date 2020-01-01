@@ -11,7 +11,9 @@
 	width: 200px;
 	height:200px;
 	background: hsla(222, 100%, 30%, 0.59);
-	clip-path: circle(100px at 100px 100px); 
+	-webkit-clip-path: circle(100px at 100px 100px); 
+	clip-path: circle(100px at 100px 100px);
+	backdrop-filter: blur(1.5px);
 }
 .hs svg{
 	filter: url(#turb);
@@ -19,6 +21,11 @@
 .hs .fish{
 	fill:white;
 	animation: hsswim 7s ease infinite;
+}
+.hs .fishpng{
+	fill:white;
+	animation: hsswim 7s ease infinite;
+	filter: url(#turb);
 }
 .hs text{
 	fill:white;
@@ -50,7 +57,7 @@
 @keyframes hsswim {
   0%   {transform: translateX(-160px);fill:hsl(222, 50%, 10%);}
   25%  {transform: translateX(10px); fill:hsl(222, 50%, 50%);}
-  50%  {transform: translateX(70px); fill:hsl(222, 50%, 60%);}
+  50%  {transform: translateX(60px); fill:hsl(222, 50%, 60%);}
   100% {transform: translateX(250px); fill:hsl(222, 50%, 40%);}
 }
 @keyframes hsshake {
