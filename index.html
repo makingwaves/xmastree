@@ -76,8 +76,8 @@
             <defs>
              <filter id="filter869" color-interpolation-filters="sRGB">
               <feGaussianBlur in="SourceAlpha" result="result1" stdDeviation=".8"/>
-              <feSpecularLighting result="result0" specularConstant=".8" specularExponent="18.1" surfaceScale="2">
-               <feDistantLight azimuth="225" elevation="24"/>
+              <feSpecularLighting result="result0" specularConstant=".4" specularExponent="18.1" surfaceScale="2">
+               <feDistantLight azimuth="225" elevation="2"/>
               </feSpecularLighting>
               <feComposite in2="SourceAlpha" operator="in" result="result6"/>
               <feMorphology operator="dilate" radius="5.7"/>
@@ -97,7 +97,7 @@
                 z" 
                 fill="#f00"
                 filter="url(#filter869)"/>
-            <g id="m" transform="scale(.33) translate(160 150)" fill="white">
+            <g id="m" class="logo" fill="white">
                 <circle cx="28.5" cy="196.4" r="27.5"/>
                 <path id="l" d="M114,222h64.2l-102.4,-219.6l-32.1,68.8z"/>
                 <use href="#l" x="107.5"/>
