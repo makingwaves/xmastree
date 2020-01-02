@@ -1,5 +1,5 @@
 // Place the ornaments on the tree
-const pos = [[600,350],[900,460],[700,700],[600,900]];
+const pos = [[600,350],[1200,460],[900,700],[600,900]];
 
 document.querySelectorAll(".ornament").forEach((item, index) => {
     item.style.left = pos[index][0] + "px";
