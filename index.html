@@ -25,12 +25,6 @@
         <div class="moresnow"></div>
     </div>
 
-      <!-- Ronny's ornament with namespace: rs-->
-      <div class="rs ornament"></div>
-
-      <!-- Torbjørn's ornament with namespace: tm-->
-      <div class="tm ornament"></div>
-
       <!-- Knut's ornament with namespace: ks-->
       <div class="ks ornament">
         <div class="ks snow"></div>
@@ -75,6 +69,46 @@
           <div class="ks ground"></div>
         </div>
       </div>
+
+      <!-- Santas' ornament with namespace: nn-->
+      <div class="nn ornament">
+        <svg viewBox="0 0 200 200">
+            <defs>
+             <filter id="filter869" color-interpolation-filters="sRGB">
+              <feGaussianBlur in="SourceAlpha" result="result1" stdDeviation=".8"/>
+              <feSpecularLighting result="result0" specularConstant=".8" specularExponent="18.1" surfaceScale="2">
+               <feDistantLight azimuth="225" elevation="24"/>
+              </feSpecularLighting>
+              <feComposite in2="SourceAlpha" operator="in" result="result6"/>
+              <feMorphology operator="dilate" radius="5.7"/>
+              <feGaussianBlur result="result11" stdDeviation="5.7"/>
+              <feDiffuseLighting diffuseConstant="2" in="result1" result="result3" surfaceScale="5">
+               <feDistantLight azimuth="225" elevation="25"/>
+              </feDiffuseLighting>
+              <feBlend in="result3" in2="SourceGraphic" mode="multiply" result="result7"/>
+              <feComposite in="result7" in2="SourceAlpha" operator="in" result="result91"/>
+              <feBlend in="result6" in2="result91" mode="lighten" result="result9"/>
+              <feComposite in="result11" in2="result9"/>
+             </filter>
+            </defs>
+            <path d="m 100 40 
+                c-40 -100 -180 54 0 140 
+                c 160 -80 60 -230 0 -140
+                z" 
+                fill="#f00"
+                filter="url(#filter869)"/>
+            <g id="m" transform="scale(.33) translate(160 150)" fill="white">
+                <circle cx="28.5" cy="196.4" r="27.5"/>
+                <path id="l" d="M114,222h64.2l-102.4,-219.6l-32.1,68.8z"/>
+                <use href="#l" x="107.5"/>
+            </g>
+            <use href="#m" transform="rotate(180 256 112)"/>        
+           </svg>
+      </div>
+
+      <!-- Torbjørn's ornament with namespace: tm-->
+      <div class="tm ornament"></div>
+
 
       <!-- Add yours-->
     </div>
