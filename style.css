@@ -332,8 +332,14 @@
 	background-color: transparent;
 	animation: nnpulse 2.1s infinite;
 }
+.nn.ornament.active{
+	animation: nnpulse .1s infinite;
+}
+.nn.ornament.active .heart{
+	fill:#3a272a;
+}
 .nn.ornament .logo{
-	animation: nnpulse2 12.1s infinite;
+	animation: nnpulse2 16s infinite;
 	transform: translate(-13px, -17px) scale(0.32);
     transform-origin: center;
 }
@@ -347,4 +353,5 @@
  @keyframes nnpulse2 {
 	85% { fill: white; }
 	90% { fill: red; }
+	95% { fill: white; }
  }
