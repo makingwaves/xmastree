@@ -5,7 +5,7 @@ Challenge: Make your own christmas ornament for the Frontend Department's intera
 Rules
 1) This is the pure CSS-edition. No JS is allowed. No CSS preprocessor.
 2) Please look at the example for how and where to put your code.
-3) You will need to create your own unique css namescope and keep your work strictly within this.
+3) You will need to create your own unique css namespace and keep your work strictly within this.
 4) You can edit the css + html. inline SVG is also possible.
 5) You can use external files. Put them in the assets folder.
 6) If you want something to happen to your ornament when it´s clicked, I have added JS so every ornament will toggle an .active class when clicked.
