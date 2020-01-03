@@ -412,7 +412,7 @@
     background-color: #8d6a35;
 }
 
-.md.ornament::after {
+.md.ornament:not(.active)::after {
     content: "";
     display: block;
     position: absolute;
@@ -469,6 +469,24 @@
         111px 40px, 121px 40px;
 }
 
+.md.ornament.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    animation: md-heart-pulse 1s infinite;
+
+    background: radial-gradient(circle at 50% 83%, crimson 29%, #0000 30%) -20px -50px,
+        radial-gradient(circle at 50% 83%, crimson 29%, #0000 30%) 20px -50px,
+        linear-gradient(to bottom left, crimson 43%, #0000 43%) bottom left/50% 50%,
+        linear-gradient(to bottom right, crimson 43%, #0000 43%) bottom right/50%
+            50%;
+    background-repeat: no-repeat;
+}
+
 @keyframes md-ornament-swing {
     0% {
         transform: rotate(3deg);
@@ -480,5 +498,19 @@
 
     100% {
         transform: rotate(3deg);
+    }
+}
+
+@keyframes md-heart-pulse {
+    10% {
+        transform: scale(1.1);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.15);
     }
 }
