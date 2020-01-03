@@ -357,9 +357,12 @@
     fill: #3a272a;
 }
 .nn.ornament .logo {
-    animation: nnpulse2 16s infinite;
-    transform: translate(-13px, -17px) scale(0.32);
-    transform-origin: center;
+    transform: rotate(0deg) translate(-13px, -9px) scale(0.32);
+	transform-origin: center 90px;
+	transition: 0.3s all;
+}
+.nn.ornament.active .logo {
+    transform: rotate(180deg) translate(-13px, -17px) scale(0.32);
 }
 @keyframes nnpulse {
     0% {
@@ -376,17 +379,6 @@
     }
     30% {
         transform: scale3d(1, 1, 1);
-    }
-}
-@keyframes nnpulse2 {
-    85% {
-        fill: white;
-    }
-    90% {
-        fill: red;
-    }
-    95% {
-        fill: white;
     }
 }
 
