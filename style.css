@@ -506,3 +506,111 @@
         transform: scale(1.15);
     }
 }
+
+/* Nicolas :DDDDDDDDDDDDDDDDDDDD */
+
+.nt.ornament {
+    /*Thx to MD */
+    background: radial-gradient(ellipse, #fff 0%, #fff 36%, #d07c7c 87%);
+    background-position: 75% 20%;
+    border-radius: 50%;
+    animation: nt-ornament-swing 3s infinite ease-in-out alternate;
+    transform-origin: 50% -20px;
+    border: 1px solid #fcc6ba;
+    transition: box-shadow 1s ease-out;
+    animation-fill-mode: both;
+}
+.nt.ornament:hover {box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 0 0 25px 20px rgba(255, 255, 255, 0.2);}
+/* Thx to KS */
+.nt.ornament:before {
+    width: 40px;
+    height: 20px;
+    margin-left: -20px;
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: linear-gradient( to right, #999999 0%, #d6d6d6 33%, #cccccc 69%, #c9c9c9 69%, #e5e5e5 100% );
+}
+
+.nt > svg {
+    display: inline-block;
+    position: relative;
+    width: 800px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    margin-left: -418px;
+    margin-top: -368px;
+    transform: scale(0.5);
+    transition: transform 1s ease-in;
+}
+.nt.ornament.active {
+    animation: nt-ornament-swing 1s infinite ease-in-out alternate;
+    z-index: 100000000000000000000000000000000000000000000000000000000000000000000;
+}
+.nt.active > svg {
+    transition: transform 10s;
+    transform: scale(6);
+    animation: ntFlipper 1s infinite ease-in-out alternate;
+}
+
+.nt rect {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.nt #maska {
+    filter: url("#turb");
+}
+.nt .blobs {
+    filter: url("#goo");
+}
+
+.nt .blob {
+    fill: white;
+    animation-direction: alternate !important;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.nt .blob:nth-child(1) { animation: ntBlobby1 6s infinite }
+.nt .blob:nth-child(2) { animation: ntBlobby2 2s infinite }
+.nt .blob:nth-child(3) { animation: ntBlobby3 10s infinite }
+.nt .blob:nth-child(4) { animation: ntBlobby4 4s infinite }
+.nt .blob:nth-child(5) { animation: ntBlobby5 2.5s infinite }
+
+@keyframes ntBlobby1 {
+    0% {transform: translate(0%, -0%) scale(1)}
+    100% {transform: translate(35%, 30%) scale(0.5)}
+}
+@keyframes ntBlobby2 {
+    0% {transform: translate(0%, -0%) scale(1)}
+    100% {transform: translate(-35%, -25%) scale(1.5)}
+}
+@keyframes ntBlobby3 {
+    0% {transform: translate(0%, -0%) scale(1)}
+    100% {transform: translate(20%, 12%) scale(0)}
+}
+@keyframes ntBlobby4 {
+    0% {transform: translate(0%, -0%) scale(1)}
+    100% {transform: translate(17%, 1%) scale(0.9)}
+}
+@keyframes ntBlobby5 {
+    0% {transform: translate(0%, -0%) scale(1)}
+    100% {transform: translate(-10px, -30px) scale(1.2)}
+}
+@keyframes ntFlipper {
+    0%{ filter: hue-rotate(0deg)}
+    100%{ filter: hue-rotate(360deg)}
+}
+
+@keyframes nt-ornament-swing {
+    0% {
+        transform: rotate(10deg)
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
