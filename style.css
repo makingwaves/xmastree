@@ -106,6 +106,7 @@
     height: 2625px;
     background-repeat: no-repeat;
     background-image: url("assets/tree.jpg");
+    filter: brightness(0.5);
 }
 
 /* Knut */
