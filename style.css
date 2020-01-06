@@ -728,3 +728,211 @@ body{
   50%  { box-shadow: 0 0 50px #d35400; }
   100% { box-shadow: 0 0 15px #d35400; }
 }
+
+
+/* David */
+ 
+.db.ornament {
+	background-color: blue;
+	border-radius: 50%;
+	overflow: hidden;
+	background: -webkit-radial-gradient(65% 15%, circle, white 10px, red 3%, red 60%, rgba(130, 2, 2, 0.993) 100%); 
+  background: -moz-radial-gradient(65% 15%, circle, white 1px, red 3%, red 60%, rgba(130, 2, 2, 0.993) 100%); 
+  background: -o-radial-gradient(65% 15%, circle, white 1px, red 3%, red 60%, rgba(130, 2, 2, 0.993) 100%);
+  background: radial-gradient(circle at 65% 15%, white 1px, red 3%, red 60%, rgba(130, 1, 1, 0.993) 100%);
+  cursor: url('assets/candy_cane.gif'), auto;
+ }
+
+ .db.ornament.active{
+  animation: db-go-bananas .6s ease 3;
+  
+ }
+
+ .db.ornament.active .helge {
+  animation: db-shake linear 1s 1 forwards, db-helge linear 3s 2s forwards;
+ }
+
+.db.snow {
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background-color: white;
+	position: absolute;
+}
+
+.db.helge {
+	left: 50px;
+	top: 200px;
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	background-image: url('assets/helge.png');
+}
+
+.db.s2 {
+	animation: db-two 4s linear 2s infinite none;
+}
+
+.db.s3 {
+	animation: db-three 4s linear 3s infinite none;
+}
+
+.db.s4 {
+	animation: db-four 4s linear 4s infinite none;
+}
+
+.db.s5 {
+	animation: db-five 4s linear 2s infinite none;
+}
+
+.db.s6 {
+	animation: db-six 4s linear 2.5s infinite none;
+}
+
+@keyframes db-shake {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes db-go-bananas {
+	from,
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+
+	50% {transform: translate3d(-40px, 0, 0);}
+	70%,
+	90% {
+		transform: translate3d(-40px, 0, 0);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translate3d(10px, 0, 0);
+	}
+}
+
+@keyframes db-helge {
+  10% {left: 40px;}
+  80% {top: 120px;
+    right: 40px;
+  }
+	100% {
+		left: 20px;
+		top: 50px;
+	}
+}
+
+@keyframes db-one{
+	0% {
+		top: 0px; 
+		left: 0px;
+	}
+
+	50% {
+		top: 100px; 
+		left: 40px;	
+	}
+
+	100% { 
+		top: 200px;
+		left: 30px;
+	}
+}
+
+@keyframes db-two{
+	0% {
+		top: 0px; 
+		left: 20px;
+	}
+
+	50% {
+		top: 100px; 
+		left: 30px;	
+	}
+
+	100% { 
+		top: 200px;
+		left: 20px;
+	}
+}
+
+@keyframes db-three{
+	0% {
+		top: 0px; 
+		left: 40px;
+	}
+
+	50% {
+		top: 100px; 
+		left: 60px;	
+	}
+
+	100% { 
+		top: 200px;
+		left: 40px;
+	}
+}
+
+@keyframes db-four{
+	0% {
+		top: 0px; 
+		left: 90px;
+	}
+
+	50% {
+		top: 80px; 
+		left: 80px;	
+	}
+
+	100% { 
+		top: 200px;
+		left:50px;
+	}
+}
+
+@keyframes db-five{
+	0% {
+		top: 0px; 
+		left: 120px;
+	}
+
+	50% {
+		top: 80px; 
+		left: 130px;	
+	}
+
+	100% { 
+		top: 200px;
+		left:130px;
+	}
+}
+
+@keyframes db-six{
+	0% {
+		top: 0px; 
+		left: 90px;
+	}
+
+	50% {
+		top: 80px; 
+		left: 80px;	
+	}
+
+	100% { 
+		top: 200px;
+		left:50px;
+	}
+}
