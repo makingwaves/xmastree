@@ -360,7 +360,7 @@ body{
     animation: nnpulse 0.1s infinite;
 }
 .nn.ornament.active .heart {
-    fill: #3a272a;
+    stroke: #3a272a;
 }
 .nn.ornament .logo {
     transform: rotate(0deg) translate(-13px, -9px) scale(0.32);
