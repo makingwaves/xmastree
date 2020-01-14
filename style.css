@@ -718,12 +718,12 @@ body{
 
 
 @keyframes kt-star-shining {
-  0%   { width: 0;    }  
+  0%   { width: 0;    }
   50%  { width: 30px; }
   100% { width: 0;    }
 }
 
-@keyframes kt-ornament-glow { 
+@keyframes kt-ornament-glow {
   0%   { box-shadow: 0 0 15px #d35400; }
   50%  { box-shadow: 0 0 50px #d35400; }
   100% { box-shadow: 0 0 15px #d35400; }
@@ -731,13 +731,13 @@ body{
 
 
 /* David */
- 
+
 .db.ornament {
 	background-color: blue;
 	border-radius: 50%;
 	overflow: hidden;
-	background: -webkit-radial-gradient(65% 15%, circle, white 10px, red 3%, red 60%, rgba(130, 2, 2, 0.993) 100%); 
-  background: -moz-radial-gradient(65% 15%, circle, white 1px, red 3%, red 60%, rgba(130, 2, 2, 0.993) 100%); 
+	background: -webkit-radial-gradient(65% 15%, circle, white 10px, red 3%, red 60%, rgba(130, 2, 2, 0.993) 100%);
+  background: -moz-radial-gradient(65% 15%, circle, white 1px, red 3%, red 60%, rgba(130, 2, 2, 0.993) 100%);
   background: -o-radial-gradient(65% 15%, circle, white 1px, red 3%, red 60%, rgba(130, 2, 2, 0.993) 100%);
   background: radial-gradient(circle at 65% 15%, white 1px, red 3%, red 60%, rgba(130, 1, 1, 0.993) 100%);
   cursor: url('assets/candy_cane.gif'), auto;
@@ -745,7 +745,7 @@ body{
 
  .db.ornament.active{
   animation: db-go-bananas .6s ease 3;
-  
+
  }
 
  .db.ornament.active .helge {
@@ -837,16 +837,16 @@ body{
 
 @keyframes db-one{
 	0% {
-		top: 0px; 
+		top: 0px;
 		left: 0px;
 	}
 
 	50% {
-		top: 100px; 
-		left: 40px;	
+		top: 100px;
+		left: 40px;
 	}
 
-	100% { 
+	100% {
 		top: 200px;
 		left: 30px;
 	}
@@ -854,16 +854,16 @@ body{
 
 @keyframes db-two{
 	0% {
-		top: 0px; 
+		top: 0px;
 		left: 20px;
 	}
 
 	50% {
-		top: 100px; 
-		left: 30px;	
+		top: 100px;
+		left: 30px;
 	}
 
-	100% { 
+	100% {
 		top: 200px;
 		left: 20px;
 	}
@@ -871,16 +871,16 @@ body{
 
 @keyframes db-three{
 	0% {
-		top: 0px; 
+		top: 0px;
 		left: 40px;
 	}
 
 	50% {
-		top: 100px; 
-		left: 60px;	
+		top: 100px;
+		left: 60px;
 	}
 
-	100% { 
+	100% {
 		top: 200px;
 		left: 40px;
 	}
@@ -888,16 +888,16 @@ body{
 
 @keyframes db-four{
 	0% {
-		top: 0px; 
+		top: 0px;
 		left: 90px;
 	}
 
 	50% {
-		top: 80px; 
-		left: 80px;	
+		top: 80px;
+		left: 80px;
 	}
 
-	100% { 
+	100% {
 		top: 200px;
 		left:50px;
 	}
@@ -905,16 +905,16 @@ body{
 
 @keyframes db-five{
 	0% {
-		top: 0px; 
+		top: 0px;
 		left: 120px;
 	}
 
 	50% {
-		top: 80px; 
-		left: 130px;	
+		top: 80px;
+		left: 130px;
 	}
 
-	100% { 
+	100% {
 		top: 200px;
 		left:130px;
 	}
@@ -922,17 +922,58 @@ body{
 
 @keyframes db-six{
 	0% {
-		top: 0px; 
+		top: 0px;
 		left: 90px;
 	}
 
 	50% {
-		top: 80px; 
-		left: 80px;	
+		top: 80px;
+		left: 80px;
 	}
 
-	100% { 
+	100% {
 		top: 200px;
 		left:50px;
+	}
+}
+
+/* Torbjorn's ornament */
+
+.tm {
+    background-color: transparent;
+}
+
+.tm:after {
+    content: "🙂";
+    font-size: 200px;
+    animation-name: tm-emoji;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes tm-emoji{
+	0% {
+        content: "🙂";
+    }
+
+	30% {
+        content: "🙂";
+    }
+
+	40% {
+        content: "😗";
+	}
+
+	60% {
+        content: "😙";
+	}
+
+	70% {
+        content: "😚";
+    }
+
+	100% {
+        content: "😚";
 	}
 }
